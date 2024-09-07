@@ -1,0 +1,213 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+} 
+
+.navi {
+  width: 250px;
+  height: 100vh;
+  background-color: #00b594;
+  float: left;
+  padding-left: 0;
+}
+ .navi h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+.navi span {
+  color: white;
+}
+
+.navi h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Archivo Black', sans-serif;
+}
+.navi nav ul li {
+  list-style-type: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 7px 0;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.nav-bar li {
+  position: relative;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  color: #000; /* Default color */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  padding: 10px;
+  padding-left: 50px;
+  display: flex;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+.nav-bar li a i {
+  margin-right: 8px;
+}
+
+.nav-bar li a:hover {
+  color: #fff; /* Changes to white on hover */
+  background-color: #008f76;
+}
+
+
+
+.choose {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+/* Parent container that holds the user section */
+.container {
+  position: relative;
+  height: 100vh; /* Adjust the height of the parent container */
+}
+
+/* User section */
+.user {
+  position: absolute;
+  bottom: 0; /* Positions the .user section at the bottom */
+  left: 0;
+  display: flex;
+  align-items: center; /* Vertically aligns image and text */
+  gap: 10px; /* Adds spacing between the image and text */
+  padding: 10px; /* Optional: Adds padding around the user section */
+}
+
+/* User image styling */
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes the image circular */
+}
+
+/* User text styling */
+.user p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000000; /* Text color */
+  font-weight: bold;
+}
+
+
+
+
+/* Main Content Styles */
+.search-bar {
+  display: flex;
+  justify-content: flex-end; /* Aligns the search bar to the right */
+  margin: 0;
+  align-items: center;
+  
+
+}
+
+.search-bar input {
+  width: 300px;
+  height: 40px;
+  padding: 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-right: 15px;
+  padding-right: 1px;
+
+}
+
+.search-bar button {
+  padding: 6px 10px; 
+  border: none;
+  border-radius: 150px;
+  border: 1px solid;
+  cursor: pointer;
+  margin-right: 4px;
+  font-weight: bold;
+ background: none;
+}
+.search-bar p{
+  margin-right: 25px;
+  font-weight: bold;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* auto-fit ensures responsive grid layout */
+  gap: 10px; /* Adjusts space between notes */
+ 
+  
+}
+
+.note {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 25px;
+}
+
+.note h2 {
+  margin-bottom: 10px;
+}
+
+.note p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dots {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+}
+.not {
+  position: relative;
+  color: black;
+ }
+ 
+ .not span::before {
+ content: "";
+ position: absolute;
+ background-color: black;
+ width: 125px;
+ padding: 2px;
+ left: 10px;
+ bottom: 0;
+ }
